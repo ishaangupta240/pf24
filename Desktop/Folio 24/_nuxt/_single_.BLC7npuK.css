@@ -1,0 +1,100 @@
+.circle[data-v-7123a2b0] {
+  backface-visibility: hidden;
+  transform: rotate(-90deg);
+  --dashOffset: 880;
+  --dashOffsetBorder: 880;
+}
+.circle-progress[data-v-7123a2b0] {
+  stroke-dasharray: 880;
+  stroke-dashoffset: var(--dashOffset);
+}
+.circle__border[data-v-7123a2b0] {
+  stroke-dasharray: 880;
+  stroke-dashoffset: var(--dashOffsetBorder);
+}
+.gallery[data-v-7123a2b0] {
+  --opacityGradient: 1;
+  --opacityBg: 1;
+  --scaleBg: 1;
+}
+[data-v-7123a2b0] .lazy-image {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+[data-v-7123a2b0] .lazy-image.loaded {
+  opacity: 1;
+}
+.item[data-v-7123a2b0] {
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  will-change: transform;
+  --borderRadius: 2rem;
+  --colorBg: rgba(var(--color2), var(--opacityBg));
+}
+.item[data-v-7123a2b0]:before {
+  background: var(--colorBg);
+  border-radius: var(--borderRadius);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(var(--scaleBg));
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .item[data-v-7123a2b0] {
+    --borderRadius: 2rem;
+  }
+}
+.item[data-v-7123a2b0] picture {
+  will-change: transform;
+}
+.item[data-v-7123a2b0] img {
+  position: relative;
+  will-change: transform;
+  z-index: 3;
+}
+@media (hover: hover) and (min-aspect-ratio: 16/7),
+  (orientation: landscape) and (pointer: coarse) and (max-width: 1023px) {
+  .gallery-progress[data-v-7123a2b0] {
+    display: none;
+  }
+} /*! purgecss start ignore */ /*! purgecss end ignore */
+[data-next-project][data-v-780799b7] {
+  --alphaBg: 0;
+}
+.dark .image[data-v-780799b7]:after {
+  background: #0003;
+  border-radius: 9999px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.next-project[data-v-780799b7] img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.next-project[data-v-780799b7] .next-content {
+  transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@media (hover: hover) and (min-aspect-ratio: 16/7),
+  (orientation: landscape) and (pointer: coarse) and (max-width: 1023px) {
+  .next-project[data-v-780799b7] {
+    display: none;
+  }
+}
+@media (hover: hover) {
+  .next-project.is-hover[data-v-780799b7]:hover .next-content {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  .next-project.is-hover[data-v-780799b7]:hover img {
+    transform: scale(1.1);
+  }
+}
